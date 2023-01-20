@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    no of emp
+no of days
+meal plan
+-->
+    <TextView
+        android:id="@+id/idEmpLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of employees"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/idEmpInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEmpLabel"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/idDaysLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Days"
+        android:layout_margin="10dp"
+        android:layout_below="@id/idEmpInput"/>
+    <EditText
+        android:id="@+id/idDaysInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idDaysLabel"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/idMealLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meal Plan"
+        android:layout_margin="10dp"
+        android:layout_below="@id/idDaysInput"/>
+    <EditText
+        android:id="@+id/idMealInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idMealLabel"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/idSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idMealInput"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/idResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idSubmit"
+        android:layout_margin="10dp"/>
+
+
+</RelativeLayout>
